@@ -35,7 +35,7 @@ public class SignupActivity extends AppCompatActivity {
                 String email = binding.signupEmail.getText().toString();
                 String password = binding.signupPassword.getText().toString();
                 String confirmPassword = binding.signupConfirm.getText().toString();
-                String role = binding.signupConfirm.getText().toString().toLowerCase();
+                String role = binding.switch1.getText().toString().toLowerCase();
                 if(email.equals("")||password.equals("")||confirmPassword.equals("")||role.equals(""))
                     Toast.makeText(SignupActivity.this, "All fields are mandatory", Toast.LENGTH_SHORT).show();
                 else{
